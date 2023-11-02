@@ -1,0 +1,136 @@
+This is basics of C++ :
+#include <iostream>
+#
+using namespace std;
+
+int add(int a, int b)
+{
+    int c = a + b;
+    return c;
+}
+class Employee
+{
+public:
+    string name;
+    int salary;
+    Employee(string name, int salary)
+    {
+        this->name = name;
+        this->salary = salary;
+    }
+    void printDetails()
+    {
+        cout << "The name of first employe is " << this->name << " and his salary is " << this->salary << "$" << endl;
+    }
+};
+int main()
+{
+    /*<<endl to endline \n also
+
+    cout<<"This is a program!!!\n";
+    short sa;
+    int i;
+    long lg;
+    long long tlg;
+    float const score = 45.56;
+    float score2 = 48.36;
+    cout<< "The score is "<<score<<"\n";
+    cout<< "The score2 is "<<score2;
+
+   int a,b;
+   cout<<"Enter a no.:\n";
+   cin>>a;
+   cout<<"Enter a no.:\n";
+   cin>>b;
+    cout<<"a + b = "<<a+b<<endl;
+    cout<<"a - b = "<<a-b<<endl;
+    cout<<"a * b = "<<a*b<<endl;
+    // Type casting
+    cout<<"a / b = "<<(float) a/b<<endl;
+
+    // if else
+
+    int age;
+    cout << "Enter your age" << endl;
+    cin >> age;
+    if ( age>150 || age<0){
+        cout<< "Invalid Age";
+    }
+    else if (age>=18){
+        cout<<"You can vote";
+    }
+    else{
+        cout<<"You can't vote.";
+    }
+    // switch
+    switch (age)
+    {
+    case 12:
+        cout << "You are 12";
+        break;
+    case 18:
+        cout<< "You are 18";
+        break;
+
+    default:
+        cout << "You are not 12";
+        break;
+    }
+
+    //while loop
+    int index = 0;
+    while (index<10){
+        cout<<"We are at index "<<index<<endl;
+        index+=1;
+    }
+    // do while loop
+    int index = 0;
+    do {
+        cout << "We are at index "<<index<<endl;
+        index+=1;
+    }
+    while (index>1000);
+    {
+        cout<<"We are at index "<<index<<endl;
+        index+=1;
+    }
+
+    for (int i = 0; i < 34; i++){
+        cout << "The value of i is "<< i << endl;
+    }
+    int a, b;
+    // cout<<"Enter a no.:\n";
+    // cin>>a;
+    // cout<<"Enter a no.:\n";
+    // cin>>b;
+    // cout<< "The func retured "<<add(a,b);
+    int arr[3] ={1,2,3};
+    //cout<<arr[1];
+    //int marks[6];
+    //for (int i =1;i<=6;i++){
+    //    cout<<"Enter the marks of "<<i<<"th student\n";
+    //    cin>>marks[i];
+    //}
+    //for (int i = 1; i<=6;i++){
+    //    cout<<"Marks of "<< i << "th student" << endl;
+    //    cout<<marks[i]<<endl;
+    //}
+    int arr2d[2][3] = {
+        {1,2,3},{4,5,6}
+    };
+    for (int i=0; i<2;i++){
+        for (int j=0;j<3;j++){
+            cout<<"The value at "<<i<<","<<j<<": "<<arr2d[i][j]<<endl;
+        }
+    }
+    int a = 34;
+    int* ptra;
+    ptra = &a;
+    cout<<ptra<<endl;
+    cout<<*ptra<<endl;*/
+    Employee emp("Ram", 150);
+    // emp.name="Mridul";
+    // emp.salary=100;
+    emp.printDetails();
+    return 0;
+}
