@@ -1,2 +1,2 @@
 # Cplusplus
-This is mu C++ Learning repository.
+This is my C++ Learning repository.
